@@ -37,7 +37,7 @@ s2 = s2[1:]  //删除 s[0]
 
 
 
-<img src="image-20220316125435093.png" alt="image-20220316125435093" style="zoom:50%;" />
+<img src="assets/image-20220316125435093.png" alt="image-20220316125435093" style="zoom:50%;" />
 
 ## map
 
