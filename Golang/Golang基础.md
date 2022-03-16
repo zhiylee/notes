@@ -136,6 +136,6 @@ node.SetValue(2)
 
 ## 接口
 
-<img src="image-20220316141649607.png" alt="image-20220316141649607" style="zoom:50%;" />
+<img src="assets/image-20220316141649607.png" alt="image-20220316141649607" style="zoom:50%;" />
 
 [Todo]...

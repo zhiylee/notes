@@ -30,7 +30,7 @@
 
 ### 数据结构
 
-![lru](lru.jpg)
+![lru](assets/lru.jpg)
 
 双向链表+map
 
