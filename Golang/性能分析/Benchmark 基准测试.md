@@ -27,8 +27,6 @@ func BenchmarkFib(b *testing.B) {
 go test -bench <module name>/<package name>
 ```
 
-
-
 > `go test <module name>/<package name>` 用来运行某个 package 内的所有测试用例。
 >
 > - 运行当前 package 内的用例：`go test <package name>` 或 `go test .`
@@ -87,8 +85,6 @@ benchmark 的默认时间是 1s
 用来设置 benchmark 的轮数
 
 `-count=3`重复测3次
-
-
 
 ## benchmark 是如何工作的
 

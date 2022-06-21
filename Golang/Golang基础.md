@@ -90,7 +90,21 @@ fmt.Println( string( []rune(s)[:1] ) )
 
 - 头铁可以用 []byte 截取，每次都自己数，如果不止包含中英文呢？寄
 
+## 判断类型
 
+- reflect.TypeOf(i)
+- i.(type)  //配合switch使用
+
+```go
+switch i.(type) {
+	case int:
+		fmt.Println("int")
+	case string:
+		fmt.Println("string")
+	case float32:
+		fmt.Println("float32")
+}
+```
 
 ## 结构体和方法
 

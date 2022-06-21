@@ -5,15 +5,11 @@ git config --global user.name "Your Name"
 git config --global user.email "email@example.com"
 ```
 
- 
-
 ## 创建SSH Key
 
 ```shell
 ssh-keygen -t rsa -C "youremail@example.com"
 ```
-
-
 
 ## 基本命令
 
@@ -79,8 +75,6 @@ git reset --hard HEAD^  #危！！删除工作空间改动代码，撤销commit�
 
 ````
 
-
-
 ## 关联远程仓库
 
 ``` shell
@@ -103,8 +97,6 @@ git checkout -b branch-name origin/branch-name  #本地创建和远程分支对�
 git branch --set-upstream branch-name origin/branch-name  #建立本地分支和远程分支的关联
 ```
 
-
-
 ## Commit Message格式
 
 type : subject
@@ -122,8 +114,6 @@ type 提交类型：
 subject 提交描述
 
 对应内容是commit 目的的简短描述，一般不超过50个字符
-
-
 
 ## 其他
 
