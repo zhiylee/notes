@@ -1,0 +1,79 @@
+"" Source your .vimrc
+"source ~/.vimrc
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+
+" Do incremental searching.
+set incsearch
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \c to the Reformat Code action
+map \c <Action>(ReformatCode)
+
+"" Map <leader>d to start debug
+map <leader>d <Action>(Debug)
+
+"" Map \r to run the code
+map \r <Action>(Run)
+
+"" Map \b to toggle the breakpoint on the current line
+map \b <Action>(ToggleLineBreakpoint)
+
+
+
+
+"" Esc
+inoremap <M-SPACE> <ESC>
+
+nmap <M-;> L;
+
+"" 快速移动
+noremap <silent> j j
+noremap <silent> k k
+noremap <silent> h h
+noremap <silent> l l
+
+"" noremap <silent> <M-k> 5j
+"" noremap <silent> <M-j> 5k
+
+noremap <silent> J 5j
+noremap <silent> K 5k
+noremap <silent> H 0
+noremap <silent> L $
+
+"" map <silent> <M-;> 0
+"" map <silent> <M-'> $
+
+"" 上移下移代码
+nmap <M-j> :m+1<CR>
+nmap <M-k> :m -2<CR>
+
+" insert mode shortcut
+inoremap <A-h> <Left>
+inoremap <A-k> <Up>
+inoremap <A-j> <Down>
+inoremap <A-k> <Right>
+inoremap <A-n> <Home>
+inoremap <A-m> <End>
+
+" ===
+" === Tab management
+" ===
+" Create a new tab with tu
+noremap tn :tabe<CR>
+noremap tN :tab split<CR>
+" Move around tabs with tn and ti
+noremap tj gT
+noremap tk gt
+noremap N gT
+noremap M gt
+
+" Find more examples here: https://jb.gg/share-ideavimrc
+set ideajoin
