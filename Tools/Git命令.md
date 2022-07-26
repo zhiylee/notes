@@ -48,6 +48,8 @@ git merge <name>  #合并 <name> 分支到当前分支，需手动处理冲突�
 git branch -d <name>  #delete
 git branch -D <name>  #强制删
 
+git branch -m old-branch new-branch #重命名分支 要先返回master
+
 
 #标签
 git tag <tagname>  #用于新建一个标签，默认为HEAD，也可以指定一个commit_id
@@ -73,6 +75,17 @@ git reset --mixed HEAD^  #同上
 
 git reset --hard HEAD^  #危！！删除工作空间改动代码，撤销commit，撤销git add . ,恢复到了上一次的commit状态
 
+
+# stash
+git stash              # 默认不包含新建的文件
+git stash -u           # 包含xi
+git stash save "name"  # 命名
+git stash pop          # 取第一个
+git stash list         # list
+git stash drop         # 删 可带名字
+git stash clear        # 删所有
+git stash show         # 看变更
+git stash show -p      # 所有的变更
 ````
 
 ## 关联远程仓库
@@ -114,6 +127,12 @@ type 提交类型：
 subject 提交描述
 
 对应内容是commit 目的的简短描述，一般不超过50个字符
+
+## 中文无法显示
+
+```shell
+git config --global core.quotepath false
+```
 
 ## 其他
 
